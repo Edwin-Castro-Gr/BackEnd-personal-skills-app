@@ -11,6 +11,7 @@ module.exports = {
   development: {
     client: 'postgresql',
     connection: {
+      host: process.env.DB_HOST,
       database: process.env.DB_NAME,
       user:     process.env.DB_USERNAME,
       password: process.env.DB_PASSWORD
@@ -27,6 +28,7 @@ module.exports = {
   staging: {
     client: 'postgresql',
     connection: {
+      host: process.env.DB_HOST,
       database: process.env.DB_NAME,
       user:     process.env.DB_USERNAME,
       password: process.env.DB_PASSWORD
@@ -43,6 +45,7 @@ module.exports = {
   production: {
     client: 'postgresql',
     connection: {
+      host: process.env.DB_HOST,
       database: process.env.DB_NAME,
       user:     process.env.DB_USERNAME,
       password: process.env.DB_PASSWORD
